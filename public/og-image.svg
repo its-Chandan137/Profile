@@ -1,0 +1,15 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#0a0a0f"/>
+  <circle cx="236" cy="158" r="260" fill="#00d4ff" opacity="0.16"/>
+  <circle cx="935" cy="188" r="250" fill="#7c3aed" opacity="0.18"/>
+  <rect x="80" y="80" width="1040" height="470" rx="28" stroke="url(#paint0_linear)" stroke-width="2" opacity="0.75"/>
+  <text x="120" y="270" fill="white" font-family="Arial, sans-serif" font-size="72" font-weight="700">Chandan Swarnakar</text>
+  <text x="124" y="348" fill="#00d4ff" font-family="Arial, sans-serif" font-size="38" font-weight="600">Frontend Developer</text>
+  <text x="124" y="418" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="30">React · Angular · Three.js</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="80" y1="80" x2="1120" y2="550" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00d4ff"/>
+      <stop offset="1" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+</svg>
