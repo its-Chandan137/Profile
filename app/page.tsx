@@ -5,11 +5,19 @@ import Hero from "@/components/sections/Hero";
 import Projects from "@/components/sections/Projects";
 import Skills from "@/components/sections/Skills";
 import NavBar from "@/components/ui/NavBar";
+import Terminal from "@/components/ui/Terminal";
 
 export default function Home() {
   return (
-    <main className="min-h-screen overflow-hidden bg-[radial-gradient(circle_at_top_left,rgba(0,212,255,0.15),transparent_32rem),radial-gradient(circle_at_85%_20%,rgba(124,58,237,0.16),transparent_30rem),#0a0a0f]">
+    <main
+      className="min-h-screen overflow-hidden"
+      style={{
+        background:
+          "radial-gradient(circle at top left, rgba(var(--accent-rgb), 0.15), transparent 32rem), radial-gradient(circle at 85% 20%, rgba(var(--accent-alt-rgb), 0.16), transparent 30rem), #0a0a0f"
+      }}
+    >
       <NavBar />
+      <Terminal />
       <Hero />
       <About />
       <Skills />

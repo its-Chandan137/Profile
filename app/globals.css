@@ -4,6 +4,17 @@
 
 :root {
   color-scheme: dark;
+  --accent: #00d4ff;
+  --accent-rgb: 0, 212, 255;
+  --accent-alt: #7c3aed;
+  --accent-alt-rgb: 124, 58, 237;
+}
+
+:root[data-accent="purple"] {
+  --accent: #7c3aed;
+  --accent-rgb: 124, 58, 237;
+  --accent-alt: #00d4ff;
+  --accent-alt-rgb: 0, 212, 255;
 }
 
 * {
@@ -16,7 +27,7 @@ body {
 }
 
 ::selection {
-  background: rgba(0, 212, 255, 0.28);
+  background: rgba(var(--accent-rgb), 0.28);
   color: #ffffff;
 }
 
@@ -31,7 +42,7 @@ body {
 ::-webkit-scrollbar-thumb {
   border: 2px solid #08080d;
   border-radius: 999px;
-  background: linear-gradient(180deg, #00d4ff, #7c3aed);
+  background: linear-gradient(180deg, var(--accent), var(--accent-alt));
 }
 
 .cursor-glow {
@@ -43,7 +54,7 @@ body {
   width: 22rem;
   height: 22rem;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(0, 212, 255, 0.13), rgba(124, 58, 237, 0.07) 38%, transparent 68%);
+  background: radial-gradient(circle, rgba(var(--accent-rgb), 0.13), rgba(var(--accent-alt-rgb), 0.07) 38%, transparent 68%);
   opacity: 0.8;
   transform: translate(-50%, -50%);
   mix-blend-mode: screen;
@@ -56,10 +67,65 @@ body {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #00d4ff, #7c3aed);
+  background: linear-gradient(135deg, var(--accent), var(--accent-alt));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+.text-cyan,
+.hover\:text-cyan:hover,
+.focus\:text-cyan:focus {
+  color: var(--accent) !important;
+}
+
+.text-cyan\/80 {
+  color: rgba(var(--accent-rgb), 0.8) !important;
+}
+
+.bg-cyan,
+.hover\:bg-cyan:hover {
+  background-color: var(--accent) !important;
+}
+
+.bg-cyan\/10,
+.hover\:bg-cyan\/10:hover {
+  background-color: rgba(var(--accent-rgb), 0.1) !important;
+}
+
+.border-cyan,
+.focus\:border-cyan:focus,
+.hover\:border-cyan:hover {
+  border-color: var(--accent) !important;
+}
+
+.border-cyan\/60 {
+  border-color: rgba(var(--accent-rgb), 0.6) !important;
+}
+
+.border-cyan\/70 {
+  border-color: rgba(var(--accent-rgb), 0.7) !important;
+}
+
+.shadow-glow {
+  box-shadow: 0 0 32px rgba(var(--accent-rgb), 0.28) !important;
+}
+
+.terminal-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(var(--accent-rgb), 0.5) #0d0d0d;
+}
+
+@keyframes terminal-blink {
+  0%,
+  49% {
+    opacity: 1;
+  }
+
+  50%,
+  100% {
+    opacity: 0;
+  }
 }
 
 .section-shell {
