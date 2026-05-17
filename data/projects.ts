@@ -40,7 +40,8 @@ export const projects: Project[] = [
     domain: "Healthcare Platform",
     tags: ["React", "REST APIs"],
     bullets: [
-      "Developed almost all UI pages, including appointment booking, medicine purchase, real-time patient monitoring, partner data entry, and per-patient report storage."
+      "Developed almost all UI pages including appointment booking, medicine purchase, real-time patient monitoring with partner/nurse data entry, and per-patient report storage.",
+      "Implemented tracking functionality where patients are monitored either via devices or manually by partners, nurses, or closed ones - all data stored per patient as downloadable reports."
     ]
   },
   {
@@ -49,7 +50,7 @@ export const projects: Project[] = [
     tags: ["React", "Redux", "Google APIs"],
     bullets: [
       "Delivered GPS-based attendance verification, travel allowance tracking, and floor-wise portion planning features using Google APIs.",
-      "Architected complex multi-role dynamic forms across a heavily legacy codebase."
+      "Architected complex multi-role dynamic forms across a heavily legacy codebase; learned multiple approaches to state and form management under real production pressure."
     ]
   },
   {
@@ -57,7 +58,8 @@ export const projects: Project[] = [
     domain: "Tiffin Subscription Service",
     tags: ["Vanilla JS", "Razorpay"],
     bullets: [
-      "Built end-to-end as one of two developers with meal plan selection, subscription management, pause/resume logic, and Razorpay payment integration."
+      "Built end-to-end as one of two developers - meal plan selection, subscription management (monthly/3-month/6-month), pause/resume logic capped at 5 days/month, and Razorpay payment integration.",
+      "Handled complete flow from landing page to login, meal form selection, subscription start date, and payment - all in vanilla JS, HTML, and CSS with no frameworks."
     ]
   },
   {
@@ -65,7 +67,8 @@ export const projects: Project[] = [
     domain: "Internal Enterprise App",
     tags: ["React", "Redux", "SCSS"],
     bullets: [
-      "First production React project: built the full auth system and established a scalable 3-layer folder structure adopted by the team."
+      "First production React project - built the complete authentication system including login flow, API integration, and OTP-based secure folder structure for sensitive documents.",
+      "Established a scalable 3-layer folder structure (folder -> subfolder -> files) adopted by the whole team, and contributed to core React and API integration learnings early in career."
     ]
   }
 ];

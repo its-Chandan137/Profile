@@ -40,7 +40,7 @@ export default function Projects() {
         ))}
       </motion.div>
 
-      <motion.div layout className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+      <motion.div layout className="grid items-start gap-5 md:grid-cols-2 xl:grid-cols-3">
         {filteredProjects.map((project, index) => (
           <ProjectCard key={project.name} project={project} index={index} />
         ))}

@@ -65,7 +65,7 @@ export default function Hero() {
             className="mt-6"
           >
             <p className="font-heading text-2xl font-semibold text-slate-100 md:text-4xl">Frontend Developer</p>
-            <p className="mt-3 text-base text-slate-300 md:text-xl">[ React · Angular · Three.js ]</p>
+            <p className="mt-3 text-base text-slate-300 md:text-xl">[ React · Angular · Next.js ]</p>
           </motion.div>
 
           <motion.div
